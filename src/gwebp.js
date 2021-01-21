@@ -10,7 +10,7 @@ const gifwebp=function() {
         console.log(__dirname);
         console.log('************************************************');
 
-        return path.join(__dirname, "../", "/bin/libwebp_linux/bin/gif2webp");//return linux library path
+        return path.join(__dirname, "/bin/libwebp_linux/bin/gif2webp");//return linux library path
 
     }else if (process.platform === 'win32') {
 
