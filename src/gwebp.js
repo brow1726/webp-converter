@@ -6,6 +6,9 @@ const gifwebp=function() {
 
         return path.join(__dirname, "../", "/bin/libwebp_osx/bin/gif2webp");//return osx library path
     }else if (process.platform === 'linux') {
+        console.log('******************** __dirname ********************');
+        console.log(__dirname);
+        console.log('************************************************');
 
         return path.join(__dirname, "../", "/bin/libwebp_linux/bin/gif2webp");//return linux library path
 
