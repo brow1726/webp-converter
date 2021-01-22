@@ -101,6 +101,9 @@ const query = `${option} "${input_image}" -o "${output_image}"`;//command to con
 //gifwebp() return which platform webp library should be used for conversion
 return new Promise((resolve, reject) => {
   //execute command 
+  console.log('******************** query ********************');
+  console.log(query);
+  console.log('************************************************');
   exec(`"${gifwebp()}"`,query.split(/\s+/),{ shell: true }, (error, stdout, stderr) => {
   if (error) {
    console.warn(error);
